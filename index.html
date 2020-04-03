@@ -8,7 +8,7 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Nerds"></a></li>
+				<li><a><img src="img/nerds-logo.svg" alt="Логотип Nerds"></a></li>
 				<li><a href="#about-us-section">Студия</a></li>
 				<li><a href="#clients-section">Клиенты</a></li>
 				<li><a href="catalog.html">Магазин</a></li>
@@ -139,9 +139,23 @@
 	</footer>
 
 	<section>
-		<h2>Напишите нам</h2>
-		<!-- Здесь будет форма для обратной связи -->
-		<button type="button">Отправить</button>
+		<form>
+      <fieldset>
+        <legend><h2>Напишите нам</h2></legend>
+        <label>
+          Ваше имя: <input type="text" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Ваш e-mail: <input type="text" placeholder="email@example.com">
+        </label>
+        <br>
+        <label>
+          Текст письма: <input type="text" placeholder="В свободной форме">
+        </label>
+        <br>
+        <button type="submit">Отправить</button>
+      </fieldset>
+    </form>
 	</section>
 </body>
 </html>
