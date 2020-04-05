@@ -8,15 +8,15 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
-		<nav>
+	<header class="header">
+		<nav class="site-navigation">
 			<ul>
-				<li><a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Nerds"></a></li>
-				<li><a href="index.html#about-us-section">Студия</a></li>
-				<li><a href="index.html#clients-section">Клиенты</a></li>
-				<li><a>Магазин</a></li>
-				<li><a href="#contacts-section">Контакты</a></li>
-				<li><a href="#">Корзина</a></li>
+				<li><a href="index.html"><img src="img/svg/nerds-logo.svg" alt="Логотип Nerds" class="navigation-item site-logo"></a></li>
+				<li><a href="index.html#about-us-section" class="navigation-item">Студия</a></li>
+				<li><a href="index.html#clients-section" class="navigation-item">Клиенты</a></li>
+				<li><a class="navigation-item navigation-current">Магазин</a></li>
+				<li><a href="#contacts-section" class="navigation-item">Контакты</a></li>
+				<li><a href="#" class="link-cart navigation-item">Корзина</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -148,23 +148,23 @@
 
 	<section>
 		<form>
-      <fieldset>
-        <legend><h2>Напишите нам</h2></legend>
-        <label>
-          Ваше имя: <input type="text" placeholder="Имя Фамилия">
-        </label>
-        <label>
-          Ваш e-mail: <input type="text" placeholder="email@example.com">
-        </label>
-        <br>
-        <label>
-          Текст письма: <input type="text" placeholder="В свободной форме">
-        </label>
-        <br>
-        <button type="submit">Отправить</button>
-      </fieldset>
-    </form>
-    <button type="button">Закрыть</button>
+			<fieldset>
+				<legend><h2>Напишите нам</h2></legend>
+				<label>
+					Ваше имя: <input type="text" placeholder="Имя Фамилия">
+				</label>
+				<label>
+					Ваш e-mail: <input type="text" placeholder="email@example.com">
+				</label>
+				<br>
+				<label>
+					Текст письма: <input type="text" placeholder="В свободной форме">
+				</label>
+				<br>
+				<button type="submit">Отправить</button>
+			</fieldset>
+		</form>
+		<button type="button">Закрыть</button>
 	</section>
 </body>
 </html>
