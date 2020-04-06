@@ -311,4 +311,21 @@ a:visited {
 }
 
 
+/* Секция клиенты */
+
+.clients-section li {
+  list-style: none;
 }
+
+.clients-logo {
+  opacity: 0.2;
+}
+
+.clients-logo:hover {
+  opacity: 1;
+}
+
+.clients-logo:active {
+  opacity: 0.1;
+}
+
