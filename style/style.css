@@ -3,6 +3,7 @@ body {
   padding: 0;
 
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
 
   background-color: #fff;
 }
@@ -10,11 +11,53 @@ body {
 a,
 a:visited {
   text-decoration: none;
-
-  color: inherit;
 }
 
+
+/* Кнопки */
+
+.button {
+  font-family: inherit;
+  font-size: inherit;
+
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+
+  border: none;
+
+  color: #fff;
+  background-color: #fb565a;
+}
+
+.button:hover {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+
+/* Класс для доступного скрытия */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 /* Навигация */
+
 .site-navigation {
   background-color: #eee;
 }
@@ -27,6 +70,8 @@ a:visited {
   font-family: 'Roboto Medium', Arial, Helvetica, sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+
+  color: #000;
 }
 
 .navigation-item:hover,
@@ -64,4 +109,55 @@ a:visited {
 .link-cart::before {
   content: url(../img/svg/cart-icon.svg);
   margin-right: 26px;
+}
+
+
+/* Секция со слайдерами */
+
+.slider-section {
+  background-color: #eee;
+}
+
+.slider-section h3 {
+  font-family: 'Roboto Medium', Arial, Helvetica, sans-serif;
+  font-size: 55px;
+}
+
+.slider-section p {
+  font-family: 'Roboto Regular', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+  color: #283136;
+}
+
+.slider-switch-btn {
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+  border: none;
+}
+
+.slider-switch-btn:disabled {
+  background-image: url(../img/active-button.png);
+  background-repeat: no-repeat;
+  background-size: 8px;
+  background-position: center;
+}
+
+.slide {
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.first-slide {
+  background-image: url(../img/slide1.png);
+}
+
+.second-slide {
+  background-image: url(../img/slide2.png);
+}
+
+.third-slide {
+  background-image: url(../img/slide3.png);
 }
