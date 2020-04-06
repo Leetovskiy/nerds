@@ -200,7 +200,7 @@ a:visited {
 }
 
 .slider-switch-btn:disabled {
-  background-image: url(../img/active-button.png);
+  background-image: url(../img/svg/circle.svg);
   background-repeat: no-repeat;
   background-size: 8px;
   background-position: center;
