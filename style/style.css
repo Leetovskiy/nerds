@@ -417,3 +417,41 @@ a:visited {
 
   color: #444444;
 }
+
+
+/* Обратная связь */
+
+.section-write-us fieldset {
+  border: none;
+}
+
+.section-write-us h2 {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.section-write-us label {
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.input {
+  width: 360px;
+  height: 50px;
+
+  font-family: inherit;
+  font-weight: 400;
+
+  border: 2px solid #d7dcde;
+}
+
+.letter-input {
+  width: 760px;
+  height: 118px;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+}
