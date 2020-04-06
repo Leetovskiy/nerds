@@ -69,6 +69,17 @@ a:visited {
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
+/* Горизонтальная линия */
+
+.horizontal-rule {
+  width: 1160px;
+  height: 2px;
+
+  background-color: #eee;
+
+  margin: 0 auto;
+}
+
 
 /* Класс для доступного скрытия */
 
