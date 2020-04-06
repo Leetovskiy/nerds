@@ -81,6 +81,16 @@ a:visited {
 }
 
 
+/* Вертикальная линия */
+
+.vertical-rule {
+  width: 2px;
+  height: 52px;
+
+  background-color: #eee;
+}
+
+
 /* Класс для доступного скрытия */
 
 .visually-hidden {
