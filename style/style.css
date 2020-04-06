@@ -329,3 +329,33 @@ a:visited {
   opacity: 0.1;
 }
 
+
+/* Контакты */
+
+.contacts-section {
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+}
+
+.contacts-container {
+  background-color: #fff;
+  width: 319px;
+}
+
+.contacts-section p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
+  color: #666666;
+
+}
+
+.contacts-section .company-name {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  color: #000;
+
+  text-transform: uppercase;
+}
