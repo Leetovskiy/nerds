@@ -360,3 +360,60 @@ a:visited {
 
   text-transform: uppercase;
 }
+
+
+/* Подвал */
+
+.socials li {
+  list-style: none;
+}
+
+.socials-item {
+  width: 80px;
+  height: 80px;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  background-color: #e1e1e1;
+}
+
+.socials-item:hover {
+  background-color: #e74246;
+}
+
+.socials-item:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.socials-vk {
+  content: url(../img/svg/vk-icon.svg);
+  margin-top: 32px;
+}
+
+.socials-fb {
+  content: url(../img/svg/fb-icon.svg);
+  margin-top: 28px;
+}
+
+.socials-inst {
+  content: url(../img/svg/insta-icon.svg);
+  margin-top: 29px;
+}
+
+.text-be-friend {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+
+  color: #000;
+}
+
+.text-discount {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+
+  color: #444444;
+}
