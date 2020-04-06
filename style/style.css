@@ -105,6 +105,9 @@ a:visited {
 
 .site-navigation ul {
   list-style: none;
+
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .navigation-item {
@@ -198,6 +201,11 @@ a:visited {
 .first-slide {
   background-image: url(../img/slide1.png);
 }
+
+.first-slide h3 {
+  margin-top: 0px;
+} 
+
 
 .second-slide {
   background-image: url(../img/slide2.png);
