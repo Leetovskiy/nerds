@@ -130,10 +130,10 @@
 			<button type="button" class="button">3</button>
 			<button type="button" class="button">Следующая</button>
 		</section>
-		<section id="contacts-section">
+		<section id="contacts-section" class="contacts-section">
 			<h2 class="visually-hidden">Контакты</h2>
-			<div>
-				<p>NЁRDS DESIGN STUDIO</p>
+			<div class="contacts-container">
+				<p class="company-name">Nёrds design studio</p>
 				<p>
 					191186, Санкт-Петербург,<br>
 					ул. Б. Конюшенная, д. 19/8<br>
@@ -144,38 +144,47 @@
 		</section>
 	</main>
 	<footer>
-		<section>
+		<section class="socials">
 			<h2 class="visually-hidden">Социальные сети</h2>
 			<ul>
-				<li><a href="404.html">ВКонтакте</a></li>
-				<li><a href="404.html">Facebook</a></li>
-				<li><a href="404.html">Instagram</a></li>
+				<li><div class="socials-item">
+					<a href="404.html" class="socials-vk social-icon" aria-label="ВКонтакте">ВКонтакте</a>
+				</div></li>
+				<li><div class="socials-item">
+					<a href="404.html" class="socials-fb social-icon" aria-label="Facebook">Facebook</a>
+				</div></li>
+				<li><div class="socials-item">
+					<a href="404.html" class="socials-inst social-icon" aria-label="Instagram">Instagram</a>
+				</div></li>
 			</ul>
-			<p>Давайте дружить, это выгодно!</p>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
+			<p class="text-be-friend">Давайте дружить, это выгодно!</p>
+			<p class="text-discount">Скидка 10% для друзей из социальных сетей.</p>
 		</section>
 	</footer>
 
-	<section>
+	<section class="section-write-us">
 		<form>
-			<fieldset>
-				<legend><h2>Напишите нам</h2></legend>
-				<label>
-					Ваше имя: <input type="text" placeholder="Имя Фамилия">
-				</label>
-				<label>
-					Ваш e-mail: <input type="email" placeholder="email@example.com">
-				</label>
-				<br>
-				<label>
-					Текст письма: 
-					<textarea placeholder="В свободной форме" class="input letter-input"></textarea>
-				</label>
-				<br>
-				<button type="submit" class="button">Отправить</button>
-			</fieldset>
-		</form>
-		<button type="button">Закрыть</button>
+      <fieldset>
+        <legend><h2>Напишите нам</h2></legend>
+        <label>
+          Ваше имя:<br>
+          <input type="text" placeholder="Имя Фамилия" class="input">
+        </label>
+        <br>
+        <label>
+          Ваш e-mail:<br>
+          <input type="email" placeholder="email@example.com" class="input">
+        </label>
+        <br>
+        <label>
+          Текст письма:<br>
+          <textarea placeholder="В свободной форме" class="input letter-input"></textarea>
+        </label>
+        <br>
+        <button type="submit" class="button">Отправить</button>
+      </fieldset>
+    </form>
+    <button type="button" aria-label="Закрыть модальное окно" class="close-button"><img src="img/svg/close-cross.svg" alt="" aria-hidden="true"></button>
 	</section>
 </body>
 </html>
