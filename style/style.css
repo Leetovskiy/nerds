@@ -607,3 +607,22 @@ input[type=number] {
 	font-weight: 400;
 	color: #666666;
 }
+
+.catalog-btn {
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+
+	color: #000;
+	background-color: #eee;
+}
+
+.catalog-btn:hover {
+	background-color: #dfdfdf;
+}
+
+.catalog-btn:active {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+}
