@@ -471,3 +471,103 @@ a:visited {
 
 	color: #000;
 }
+
+
+/* Фильтры */
+
+.filters fieldset {
+	border: none;
+}
+
+.input-range-div {
+	width: 261px;
+	height: 81px;
+
+	background-color: #eee;
+}
+
+.filters legend,
+.sort-heading {
+	font-family: inherit;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.filters label {
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.filters li {
+	list-style: none;
+}
+
+.input-price {
+	height: 38px;
+	width: 80px;
+
+	text-align: center;
+
+	background-color: #eee;
+
+	border: none;
+	border-radius: 2px;
+}
+
+/* Прячет стрелки на input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+.price-fieldset label {
+	font-family: inherit;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 22px;
+
+	color: #283136;
+	text-transform: uppercase;
+}
+
+
+/* Сортировка */
+
+.section-sort a {
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	color: #000;
+}
+.section-sort li {
+	list-style: none;
+}
+
+.filters-btn {
+	color: #000;
+	background-color: #eee;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+.filters-btn:hover {
+	background-color: #dfdfdf;
+}
+
+.filters-btn:active {
+	color: rgba(0, 0, 0, 0.3);
+	background-color: #d5d5d5;
+}

@@ -22,20 +22,22 @@
 		<h1 class="catalog-heading">Магазин готовых шаблонов</h1>
 	</header>
 	<main>
-		<section>
+		<section class="filters">
 			<h2 class="visually-hidden">Фильтры</h2>
 			<form>
-				<fieldset>
+				<fieldset class="price-fieldset">
 					<legend>Стоимость:</legend>
-					<input type="range" aria-label="Стоимость">
+					<div class="input-range-div">
+						<input type="range" aria-label="Стоимость">
+					</div>
 					<br>
-					<label>От <input type="text" placeholder="0"></label>
-					<label>До <input type="text" placeholder="15000"></label>
+					<label>От <input type="number" min="0" max="15000" placeholder="0" class="input-price"></label>
+					<label>До <input type="number" min="0" max="15000" placeholder="15000" class="input-price"></label>
 				</fieldset>
-				<fieldset>
+				<fieldset class="filter-grid">
 					<legend>Сетка:</legend>
 					<ul>
-						<li><label><input type="radio" name="grid"> Адаптивная</label></li>
+						<li><label><input type="radio" name="grid" checked> Адаптивная</label></li>
 						<li><label><input type="radio" name="grid"> Фиксированная</label></li>
 						<li><label><input type="radio" name="grid"> Резиновая</label></li>
 					</ul>
@@ -50,11 +52,11 @@
 						<li><label><input type="checkbox"> Корзина</label></li>
 					</ul>
 				</fieldset>
-				<button type="submit" class="button">Показать</button>
+				<button type="submit" class="button filters-btn">Показать</button>
 			</form>
 		</section>
-		<section>
-			<h2>Сортировать:</h2>
+		<section class="section-sort">
+			<h2 class="sort-heading">Сортировать:</h2>
 				<ul>
 					<li>
 						<a href="404.html">По цене</a>
