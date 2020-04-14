@@ -571,3 +571,39 @@ input[type=number] {
 	color: rgba(0, 0, 0, 0.3);
 	background-color: #d5d5d5;
 }
+
+
+/* Каталог шаблонов */
+
+.section-catalog li {
+	list-style: none;
+}
+
+.product-heading,
+.product-heading a {
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.product-heading:hover,
+.product-heading a:hover {
+	color: #fb565a;
+} 
+
+.product-heading:active,
+.product-heading a:active {
+	color: #000;
+	opacity: 0.3;
+} 
+
+.product-description {
+	font-family: inherit;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #666666;
+}
