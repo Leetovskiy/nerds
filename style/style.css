@@ -109,12 +109,14 @@ a:visited {
   overflow: hidden;
 }
 
+/* Шапка */
+
+.header {
+	background-color: #eee;
+}
+
 
 /* Навигация */
-
-.site-navigation {
-  background-color: #eee;
-}
 
 .site-navigation ul {
   list-style: none;
@@ -454,4 +456,18 @@ a:visited {
 .close-button {
   background: transparent;
   border: none;
+}
+
+
+/* Каталог */
+
+.catalog-heading {
+	font-family: inherit;
+	font-size: 55px;
+	font-weight: 500;
+	line-height: 55px;
+
+	text-align: center;
+
+	color: #000;
 }
