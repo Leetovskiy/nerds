@@ -125,6 +125,10 @@ a:visited {
   margin-top: 0px;
 }
 
+.site-navigation li {
+	display: inline-block;
+}
+
 .navigation-item {
   font-family: 'Roboto Medium', Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -243,6 +247,11 @@ a:visited {
   list-style: none;
 }
 
+.advantages-section li {
+	display: inline-block;
+}
+
+
 .advantages-section h3 {
   font-family: 'Roboto Bold', Arial, Helvetica, sans-serif;
   font-size: 24px;
@@ -318,6 +327,7 @@ a:visited {
 
 .clients-section li {
   list-style: none;
+	display: inline-block;
 }
 
 .clients-logo {
@@ -368,6 +378,7 @@ a:visited {
 
 .socials li {
   list-style: none;
+	display: inline-block;
 }
 
 .socials-item {
@@ -553,6 +564,7 @@ input[type=number] {
 }
 .section-sort li {
 	list-style: none;
+	display: inline-block;
 }
 
 .filters-btn {
@@ -577,6 +589,8 @@ input[type=number] {
 
 .section-catalog li {
 	list-style: none;
+	display: inline-block;
+	margin: 10px;
 }
 
 .product-heading,
