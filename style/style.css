@@ -494,7 +494,57 @@ a:visited {
 	width: 261px;
 	height: 81px;
 
+	text-align: center;
+
 	background-color: #eee;
+
+	border-radius: 4px;
+}
+
+.price-range {
+	/* Обнуление стилей элемента */
+	-webkit-appearance: none;
+
+	width: 219px;
+	height: 2px;
+
+	background-color: #d7dcde;
+}
+
+/* Стилизация для WebKit/Blink */
+.price-range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+
+	width: 20px;
+	height: 22px;
+	border: none;
+
+	background-image: url("../img/svg/filter-button.svg");
+	background-repeat: no-repeat;
+}
+
+/* Стилизация для Firefox */
+.price-range::-moz-range-thumb {
+	width: 20px;
+	height: 22px;
+	border: none;
+
+	background-image: url("../img/svg/filter-button.svg");
+	background-repeat: no-repeat;
+}
+
+.price-range::-moz-range-track {
+	background:-moz-linear-gradient(left, #00ca74 0%, #00ca74 75%, #d7dcde 75%, #d7dcde 100%);
+}
+
+/* Стилизация для IE */
+.price-range::-ms-thumb {
+	width: 20px;
+	height: 22px;
+	border: none;
+
+	background-image: url("../img/svg/filter-button.svg");
+	background-repeat: no-repeat;
 }
 
 .filters legend,
