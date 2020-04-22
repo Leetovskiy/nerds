@@ -15,6 +15,11 @@ a:visited {
   text-decoration: none;
 }
 
+a.disabled-link {
+	pointer-events: none;
+	cursor: default;
+}
+
 
 /* Кнопки */
 
