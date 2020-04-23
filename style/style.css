@@ -305,8 +305,6 @@ a.disabled-link {
   font-size: 45px;
   font-weight: 500;
 
-  margin-bottom: 19px;
-
   color: #000;
 }
 
@@ -758,4 +756,39 @@ input[type=number] {
 .advantages-list {
 	display: flex;
 	justify-content: space-between;
+}
+
+
+/* О нас */
+
+.about-us-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+
+	min-height: 400px;
+	margin-top: 80px;
+	margin-bottom: 75px;
+}
+
+.first-studio {
+	flex-grow: 7;
+}
+
+.second-studio {
+	flex-grow: 3;
+
+	display: flex;
+	align-items: flex-end;
+}
+
+.about-us-list-wrapper {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 0;
+}
+
+.about-us-list-item {
+	max-width: 105px;
 }
