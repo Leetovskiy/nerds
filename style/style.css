@@ -345,6 +345,8 @@ a.disabled-link {
 .clients-section li {
   list-style: none;
 	display: inline-block;
+
+	margin: 60px 0;
 }
 
 .clients-logo {
@@ -358,6 +360,15 @@ a.disabled-link {
 .clients-logo:active {
   opacity: 0.1;
 }
+
+/* .clients-item + .clients-item::before {
+	content: "";
+	float: left;
+	margin-right: 10px;
+	width: 2px;
+	height: 52px;
+	background-color: #eee;
+}*/
 
 
 /* Контакты */
@@ -772,11 +783,11 @@ input[type=number] {
 }
 
 .first-studio {
-	flex-grow: 7;
+	flex-grow: 6;
 }
 
 .second-studio {
-	flex-grow: 3;
+	flex-grow: 4;
 
 	display: flex;
 	align-items: flex-end;
@@ -792,3 +803,13 @@ input[type=number] {
 .about-us-list-item {
 	max-width: 105px;
 }
+
+
+/* Клиенты */
+
+.clients-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
