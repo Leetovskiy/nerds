@@ -118,6 +118,10 @@ a.disabled-link {
 
 .header {
 	background-color: #eee;
+	min-height: 132px;
+	padding-top: 49px;
+
+	border-bottom: 1px solid transparent;
 }
 
 
@@ -125,17 +129,11 @@ a.disabled-link {
 
 .site-navigation ul {
   list-style: none;
-
-  margin-bottom: 0px;
-  margin-top: 0px;
-}
-
-.site-navigation li {
-	display: inline-block;
 }
 
 .navigation-item {
-  font-family: 'Roboto Medium', Arial, Helvetica, sans-serif;
+  font-family: inherit;
+	font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
 
@@ -187,14 +185,16 @@ a.disabled-link {
 }
 
 .slider-section h3 {
-  font-family: 'Roboto Medium', Arial, Helvetica, sans-serif;
+  font-family: inherit;
+	font-weight: 500;
   font-size: 55px;
 
   margin-bottom: 39px;
 }
 
 .slider-section p {
-  font-family: 'Roboto Regular', Arial, Helvetica, sans-serif;
+  font-family: inherit;
+	font-weight: 400;
   font-size: 16px;
 
   color: #283136;
@@ -258,7 +258,8 @@ a.disabled-link {
 
 
 .advantages-section h3 {
-  font-family: 'Roboto Bold', Arial, Helvetica, sans-serif;
+  font-family: inherit;
+	font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
 
@@ -266,7 +267,8 @@ a.disabled-link {
 }
 
 .advantages-section p {
-  font-family: 'Roboto Regular', Arial, Helvetica, sans-serif;
+  font-family: inherit;
+	font-weight: 400;
   
   color: #283136;
 
@@ -281,13 +283,14 @@ a.disabled-link {
 /* О нас */
 
 .about-us-section p {
-  font-family: 'Roboto Regular', Arial, Helvetica, sans-serif;
+  font-family: inherit;
+	font-weight: 400;
 
   color: #283136;
 }
 
 .about-us-section .text-big {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 45px;
   font-weight: 500;
 
@@ -297,7 +300,7 @@ a.disabled-link {
 }
 
 .about-us-section .text-bold {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-weight: 700;
 
   text-transform: uppercase;
@@ -310,13 +313,13 @@ a.disabled-link {
 }
 
 .about-us-list {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
 
   list-style: none;
 }
 
 .big-numbers {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 45px;
   font-weight: 700;
 }
@@ -361,7 +364,7 @@ a.disabled-link {
 }
 
 .contacts-section p {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-weight: 400;
 
   color: #666666;
@@ -369,7 +372,7 @@ a.disabled-link {
 }
 
 .contacts-section .company-name {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 18px;
   font-weight: 700;
 
@@ -422,7 +425,7 @@ a.disabled-link {
 }
 
 .text-be-friend {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 36px;
   font-weight: 700;
 
@@ -430,7 +433,7 @@ a.disabled-link {
 }
 
 .text-discount {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-weight: 400;
 
   color: #444444;
@@ -444,7 +447,7 @@ a.disabled-link {
 }
 
 .section-write-us h2 {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: inherit;
   font-size: 45px;
   font-weight: 500;
 }
@@ -484,8 +487,8 @@ a.disabled-link {
 	line-height: 55px;
 
 	text-align: center;
-	padding-bottom: 111px;
-	margin-top: 85px;
+	margin-top: 82px;
+	margin-bottom: 115px;
 
 	color: #000;
 }
@@ -696,4 +699,32 @@ input[type=number] {
 .catalog-btn:active {
 	background-color: #d5d5d5;
 	color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Сетка */
+
+.container {
+	width: 1160px;
+	margin-left: 140px;
+}
+
+.main-navigation {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+.cart {
+	margin-left: auto;
+}
+
+.main-logo {
+	margin-right: auto;
+}
+
+.user-navigation {
+	width: 438px;
+	display: flex;
+	justify-content: space-between;
 }
