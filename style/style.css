@@ -375,12 +375,25 @@ a.disabled-link {
 
 .contacts-section {
   background-image: url(../img/map.png);
-  background-repeat: no-repeat;
+	margin-top: 80px;
+	margin-bottom: 70px;
+	width: 100%;
+	min-height: 420px;
+
+	display: flex;
+	align-items: center;
 }
 
 .contacts-container {
   background-color: #fff;
-  width: 319px;
+  width: 320px;
+	min-height: 310px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 140px;
 }
 
 .contacts-section p {
