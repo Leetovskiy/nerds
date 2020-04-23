@@ -256,6 +256,7 @@ a.disabled-link {
 
 .advantages-section {
   background-color: #fff;
+	margin-bottom: 80px;
 }
 
 .advantages-section ul {
@@ -752,3 +753,9 @@ input[type=number] {
 }
 
 
+/* Преимущества */
+
+.advantages-list {
+	display: flex;
+	justify-content: space-between;
+}
