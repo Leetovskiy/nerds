@@ -826,3 +826,27 @@ input[type=number] {
 	align-items: center;
 }
 
+/* Соц. сети */
+
+.socials {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.socials-list {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.socials-list-item + .socials-list-item {
+	margin-left: 10px;
+}
+
+.socials-text-block {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
