@@ -26,116 +26,122 @@
 		<h1 class="catalog-heading">Магазин готовых шаблонов</h1>
 	</header>
 	<main>
-		<section class="filters">
-			<h2 class="visually-hidden">Фильтры</h2>
-			<form>
-				<fieldset class="price-fieldset">
-					<legend>Стоимость:</legend>
-					<div class="input-range-div">
-						<input type="range" aria-label="Стоимость" class="price-range">
-					</div>
-					<br>
-					<label>От <input type="number" min="0" max="15000" placeholder="0" class="input-price"></label>
-					<label>До <input type="number" min="0" max="15000" placeholder="15000" class="input-price"></label>
-				</fieldset>
-				<fieldset class="filter-grid">
-					<legend>Сетка:</legend>
+		<div class="container catalog-container">
+			<section class="filters">
+				<h2 class="visually-hidden">Фильтры</h2>
+				<form>
+					<fieldset class="price-fieldset">
+						<legend>Стоимость:</legend>
+						<div class="input-range-div">
+							<input type="range" aria-label="Стоимость" class="price-range">
+						</div>
+						<br>
+						<label>От <input type="number" min="0" max="15000" placeholder="0" class="input-price"></label>
+						<label>До <input type="number" min="0" max="15000" placeholder="15000" class="input-price"></label>
+					</fieldset>
+					<fieldset class="filter-grid">
+						<legend>Сетка:</legend>
+						<ul>
+							<li><label><input type="radio" name="grid" checked> Адаптивная</label></li>
+							<li><label><input type="radio" name="grid"> Фиксированная</label></li>
+							<li><label><input type="radio" name="grid"> Резиновая</label></li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<ul>
+							<li><label><input type="checkbox"> Слайдер</label></li>
+							<li><label><input type="checkbox"> Блок преимуществ</label></li>
+							<li><label><input type="checkbox"> Новости  </label></li>
+							<li><label><input type="checkbox"> Галерея  </label></li>
+							<li><label><input type="checkbox"> Корзина</label></li>
+						</ul>
+					</fieldset>
+					<button type="submit" class="button filters-btn">Показать</button>
+				</form>
+			</section>
+			<div class="catalog">
+				<section class="section-sort">
+					<h2 class="sort-heading">Сортировать:</h2>
 					<ul>
-						<li><label><input type="radio" name="grid" checked> Адаптивная</label></li>
-						<li><label><input type="radio" name="grid"> Фиксированная</label></li>
-						<li><label><input type="radio" name="grid"> Резиновая</label></li>
+						<li>
+							<a href="404.html">По цене</a>
+						</li>
+						<li>
+							<a href="404.html">По типу</a>
+						</li>
+						<li>
+							<a href="404.html">По названию</a>
+						</li>
+						<li>
+							<a href="404.html">&#9660;</a>
+						</li>
+						<li>
+							<a href="404.html">&#9650;</a>
+						</li>
 					</ul>
-				</fieldset>
-				<fieldset>
-					<legend>Особенности:</legend>
-					<ul>
-						<li><label><input type="checkbox"> Слайдер</label></li>
-						<li><label><input type="checkbox"> Блок преимуществ</label></li>
-						<li><label><input type="checkbox"> Новости  </label></li>
-						<li><label><input type="checkbox"> Галерея  </label></li>
-						<li><label><input type="checkbox"> Корзина</label></li>
+					</section>
+				<section class="section-catalog">
+					<h2 class="visually-hidden">Каталог</h2>
+					<ul class="catalog-list">
+						<li>
+							<div class="product">
+								<img src="img/sedona.png" alt="Превью макета Sedona">
+								<h3 class="product-heading"><a href="404.html">Sedona</a></h3>
+								<p class="product-description">Информационный сайт для туристов</p>
+								<button class="button">9 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<div class="product">
+								<img src="img/pink.png" alt="Превью макета Pink">
+								<h3 class="product-heading"><a href="404.html">Pink</a></h3>
+								<p class="product-description">Социальная сеть для друзей</p>
+								<button class="button">7 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<div class="product">
+								<img src="img/barbershop.png" alt="Превью макета Borodinski">
+								<h3 class="product-heading"><a href="404.html">Borodinski</a></h3>
+								<p class="product-description">Барбершоп для авантюристов</p>
+								<button class="button">5 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<div class="product">
+								<img src="img/mishka.png" alt="Превью макета Mishka">
+								<h3 class="product-heading"><a href="404.html">Mishka</a></h3>
+								<p class="product-description">Сувениры ручной работы</p>
+								<button class="button">11 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<div class="product">
+								<img src="img/aplus.png" alt="Превью макета A+">
+								<h3 class="product-heading"><a href="404.html">A+</a></h3>
+								<p class="product-description">Обучение всему и сразу</p>
+								<button class="button">15 900 руб.</button>
+							</div>
+						</li>
+						<li>
+							<div class="product">
+								<img src="img/kvast.png" alt="Превью макета Кваст">
+								<h3 class="product-heading"><a href="404.html">Кваст</a></h3>
+								<p class="product-description">Мужицкий квас</p>
+								<button class="button">9 900 руб.</button>
+							</div>
+						</li>
 					</ul>
-				</fieldset>
-				<button type="submit" class="button filters-btn">Показать</button>
-			</form>
-		</section>
-		<section class="section-sort">
-			<h2 class="sort-heading">Сортировать:</h2>
-				<ul>
-					<li>
-						<a href="404.html">По цене</a>
-					</li>
-					<li>
-						<a href="404.html">По типу</a>
-					</li>
-					<li>
-						<a href="404.html">По названию</a>
-					</li>
-					<li>
-						<a href="404.html">&#9660;</a>
-					</li>
-					<li>
-						<a href="404.html">&#9650;</a>
-					</li>
-				</ul>
-		</section>
-		<section class="section-catalog">
-			<h2 class="visually-hidden">Каталог</h2>
-			<ul>
-				<li>
-					<div class="product">
-						<img src="img/sedona.png" alt="Превью макета Sedona">
-						<h3 class="product-heading"><a href="404.html">Sedona</a></h3>
-						<p class="product-description">Информационный сайт для туристов</p>
-						<button class="button">9 900 руб.</button>
+					<div class="catalog-buttons">
+						<button type="button" class="button catalog-btn">1</button>
+						<button type="button" class="button catalog-btn">2</button>
+						<button type="button" class="button catalog-btn">3</button>
+						<button type="button" class="button catalog-btn">Следующая</button>
 					</div>
-				</li>
-				<li>
-					<div class="product">
-						<img src="img/pink.png" alt="Превью макета Pink">
-						<h3 class="product-heading"><a href="404.html">Pink</a></h3>
-						<p class="product-description">Социальная сеть для друзей</p>
-						<button class="button">7 900 руб.</button>
-					</div>
-				</li>
-				<li>
-					<div class="product">
-						<img src="img/barbershop.png" alt="Превью макета Borodinski">
-						<h3 class="product-heading"><a href="404.html">Borodinski</a></h3>
-						<p class="product-description">Барбершоп для авантюристов</p>
-						<button class="button">5 900 руб.</button>
-					</div>
-				</li>
-				<li>
-					<div class="product">
-						<img src="img/mishka.png" alt="Превью макета Mishka">
-						<h3 class="product-heading"><a href="404.html">Mishka</a></h3>
-						<p class="product-description">Сувениры ручной работы</p>
-						<button class="button">11 900 руб.</button>
-					</div>
-				</li>
-				<li>
-					<div class="product">
-						<img src="img/aplus.png" alt="Превью макета A+">
-						<h3 class="product-heading"><a href="404.html">A+</a></h3>
-						<p class="product-description">Обучение всему и сразу</p>
-						<button class="button">15 900 руб.</button>
-					</div>
-				</li>
-				<li>
-					<div class="product">
-						<img src="img/kvast.png" alt="Превью макета Кваст">
-						<h3 class="product-heading"><a href="404.html">Кваст</a></h3>
-						<p class="product-description">Мужицкий квас</p>
-						<button class="button">9 900 руб.</button>
-					</div>
-				</li>
-			</ul>
-			<button type="button" class="button catalog-btn">1</button>
-			<button type="button" class="button catalog-btn">2</button>
-			<button type="button" class="button catalog-btn">3</button>
-			<button type="button" class="button catalog-btn">Следующая</button>
-		</section>
+				</section>
+			</div>
+		</div>
 		<section id="contacts-section" class="contacts-section">
 			<h2 class="visually-hidden">Контакты</h2>
 			<div class="contacts-container">

@@ -686,11 +686,12 @@ input[type=number] {
 
 
 /* Каталог шаблонов */
+.section-catalog ul {
+	padding: 0;
+}
 
 .section-catalog li {
 	list-style: none;
-	display: inline-block;
-	margin: 10px;
 }
 
 .product-heading,
@@ -887,4 +888,49 @@ input[type=number] {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+
+/* Каталог */
+
+.catalog-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 60px;
+}
+
+.catalog {
+	width: 760px;
+}
+
+.section-sort {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section-catalog {
+	display: flex;
+	flex-direction: column;
+}
+
+.catalog {
+	display: flex;
+	flex-direction: column;
+}
+
+.catalog-list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.catalog-list li {
+	margin-bottom: 30px;
+}
+
+.catalog-buttons {
+	display: flex;
+	justify-content: space-between;
+	width: 445px;
 }
