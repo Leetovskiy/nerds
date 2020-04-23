@@ -182,28 +182,33 @@
 	</footer>
 
 	<section class="section-write-us">
-		<form>
-      <fieldset>
-        <legend><h2>Напишите нам</h2></legend>
-        <label>
-          Ваше имя:<br>
-          <input type="text" placeholder="Имя Фамилия" class="input">
-        </label>
-        <br>
-        <label>
-          Ваш e-mail:<br>
-          <input type="email" placeholder="email@example.com" class="input">
-        </label>
-        <br>
-        <label>
-          Текст письма:<br>
-          <textarea placeholder="В свободной форме" class="input letter-input"></textarea>
-        </label>
-        <br>
-        <button type="submit" class="button">Отправить</button>
+		<form class="write-us-form">
+      <fieldset class="write-us-fieldset">
+				<div class="modal-heading">
+					<legend><h2>Напишите нам</h2></legend>
+					<button type="button" aria-label="Закрыть модальное окно" class="close-button"><img src="img/svg/close-cross.svg" alt="" aria-hidden="true"></button>
+				</div>
+				<div class="modal-inputs">
+					<label>
+						Ваше имя:<br>
+						<input type="text" placeholder="Имя Фамилия" class="input">
+					</label>
+					<label>
+						Ваш e-mail:<br>
+						<input type="email" placeholder="email@example.com" class="input">
+					</label>
+				</div>
+				<div>
+					<label>
+						Текст письма:<br>
+						<textarea placeholder="В свободной форме" class="input letter-input"></textarea>
+					</label>
+				</div>
+				<div>
+					<button type="submit" class="button">Отправить</button>
+				</div>
       </fieldset>
     </form>
-    <button type="button" aria-label="Закрыть модальное окно" class="close-button"><img src="img/svg/close-cross.svg" alt="" aria-hidden="true"></button>
 	</section>
 </body>
 </html>
