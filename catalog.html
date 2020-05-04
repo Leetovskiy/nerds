@@ -10,12 +10,12 @@
 <body>
 	<header class="header">
 		<nav class="site-navigation">
-			<ul class="container">
+			<ul class="navigation-list">
 				<div class="main-navigation">
-					<li class="main-logo"><a href="index.html"><img src="img/svg/nerds-logo.svg" alt="Логотип Nerds" class="navigation-item site-logo"></a></li>
+					<li class="main-logo"><a href="index.html"><img src="img/svg/nerds-logo.svg" alt="Логотип Nerds" class="navigation-item site-logo navigation-current"></a></li>
 					<div class="user-navigation">
-						<li><a href="index.html#about-us-section" class="navigation-item">Студия</a></li>
-						<li><a href="index.html#clients-section" class="navigation-item">Клиенты</a></li>
+						<li><a href="#about-us-section" class="navigation-item">Студия</a></li>
+						<li><a href="#clients-section" class="navigation-item">Клиенты</a></li>
 						<li><a href="catalog.html" class="navigation-item disabled-link navigation-current">Магазин</a></li>
 						<li><a href="#contacts-section" class="navigation-item">Контакты</a></li>
 					</div>
@@ -23,10 +23,10 @@
 				</div>
 			</ul>
 		</nav>
-		<h1 class="catalog-heading">Магазин готовых шаблонов</h1>
 	</header>
 	<main>
-		<div class="container catalog-container">
+		<h1 class="catalog-heading">Магазин готовых шаблонов</h1>
+		<div class=" catalog-container">
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтры</h2>
 				<form>
@@ -35,7 +35,6 @@
 						<div class="input-range-div">
 							<input type="range" aria-label="Стоимость" class="price-range">
 						</div>
-						<br>
 						<label>От <input type="number" min="0" max="15000" placeholder="0" class="input-price"></label>
 						<label>До <input type="number" min="0" max="15000" placeholder="15000" class="input-price"></label>
 					</fieldset>
@@ -47,7 +46,7 @@
 							<li><label><input type="radio" name="grid"> Резиновая</label></li>
 						</ul>
 					</fieldset>
-					<fieldset>
+					<fieldset class="features">
 						<legend>Особенности:</legend>
 						<ul>
 							<li><label><input type="checkbox"> Слайдер</label></li>
@@ -63,7 +62,7 @@
 			<div class="catalog">
 				<section class="section-sort">
 					<h2 class="sort-heading">Сортировать:</h2>
-					<ul>
+					<ul class="section-sort-list">
 						<li>
 							<a href="404.html">По цене</a>
 						</li>
@@ -146,17 +145,17 @@
 			<h2 class="visually-hidden">Контакты</h2>
 			<div class="contacts-container">
 				<p class="company-name">Nёrds design studio</p>
-				<p>
+				<p class="address">
 					191186, Санкт-Петербург,<br>
-					ул. Б. Конюшенная, д. 19/8<br>
+					ул. Б. Конюшенная, д. 19/8<br><br>
 					тел. +7 (812) 275-75-75
 				</p>
-				<button type="button" class="button">Напишите нам</button>
+				<button type="button" class="button write-us-btn">Напишите нам</button>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<section class="socials container">
+		<section class="socials ">
 			<h2 class="visually-hidden">Социальные сети</h2>
 			<div class="socials-block">
 				<ul class="socials-list">

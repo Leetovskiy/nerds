@@ -5,12 +5,11 @@
 	<title>Дизайн-студия "Nerds"</title>
 	<link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="style/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> </head>
 <body>
 	<header class="header">
 		<nav class="site-navigation">
-			<ul class="container">
+			<ul class="navigation-list">
 				<div class="main-navigation">
 					<li class="main-logo"><a class="disabled-link"><img src="img/svg/nerds-logo.svg" alt="Логотип Nerds" class="navigation-item site-logo navigation-current"></a></li>
 					<div class="user-navigation">
@@ -27,7 +26,7 @@
 	<main>
 		<h1 class="visually-hidden">Дизайн-студия "Nerds"</h1>
 		<section class="slider-section">
-		<div class="container">
+		<div class="slider-section-wrapper">
 			<h2 class="visually-hidden">Как мы работаем</h2>
 				<div class="slide first-slide slide-wrapper">
 					<h3>Долго, дорого, <br> скрупулезно.</h3>
@@ -35,26 +34,28 @@
 					для вашего сайта или мобильного приложения.</p>
 					<a href="404.html" class="button slider-link">Узнать больше</a>
 				</div>
-				<div class="slide second-slide slide-wrapper">
-					<h3>Любим математику <br> как никто другой</h3>
-					<p>Никакого креатива, только математические формулы<br> 
-					для расчета идеальных пропорций.</p>
-					<a href="404.html" class="button slider-link">Узнать больше</a>
+				<!--<div class="slide second-slide slide-wrapper">-->
+					<!--<h3>Любим математику <br> как никто другой</h3>-->
+					<!--<p>Никакого креатива, только математические формулы<br> -->
+					<!--для расчета идеальных пропорций.</p>-->
+					<!--<a href="404.html" class="button slider-link">Узнать больше</a>-->
+				<!--</div>-->
+				<!--<div class="slide third-slide slide-wrapper">-->
+					<!--<h3>Только ночь, <br> только хардкор</h3>-->
+					<!--<p>-->
+						<!--Работать днем, как все? Мы против этого.<br>-->
+						<!--Ближе к полуночи работа только начинается.-->
+					<!--</p>-->
+					<!--<a href="404.html" class="button slider-link">Узнать больше</a>-->
+				<!--</div>-->
+				<div class="slider-btn-wrapper">
+					<button type="button" class="slider-switch-btn"></button>
+					<button type="button" class="slider-switch-btn"></button>
+					<button type="button" class="slider-switch-btn"></button>
 				</div>
-				<div class="slide third-slide slide-wrapper">
-					<h3>Только ночь, <br> только хардкор</h3>
-					<p>
-						Работать днем, как все? Мы против этого.<br>
-						Ближе к полуночи работа только начинается.
-					</p>
-					<a href="404.html" class="button slider-link">Узнать больше</a>
-				</div>
-				<button type="button" class="slider-switch-btn"></button>
-				<button type="button" class="slider-switch-btn"></button>
-				<button type="button" class="slider-switch-btn"></button>
 			</div>
 		</section>
-		<section class="advantages-section container">
+		<section class="advantages-section">
 			<h2 class="visually-hidden">Преимущества</h2>
 			<ul class="advantages-list">
 				<li>
@@ -66,7 +67,7 @@
 							после того как увидит ваш сайт!
 						</p>
 						<p>
-							<a href="catalog.html" class="button">Заказать</a>
+							<a href="catalog.html" class="button advantages-btn">Заказать</a>
 						</p>
 					</section>
 				</li>
@@ -79,7 +80,7 @@
 							AppStore и Google Play
 						</p>
 						<p>
-							<a href="catalog.html" class="button button-green">Заказать</a>
+							<a href="catalog.html" class="button button-green advantages-btn">Заказать</a>
 						</p>
 					</section>
 				</li>
@@ -92,21 +93,21 @@
 							насколько вы изумительны!
 						</p>
 						<p>
-							<a href="catalog.html" class="button button-yellow">Заказать</a>
+							<a href="catalog.html" class="button button-yellow advantages-btn">Заказать</a>
 						</p>
 					</section>
 				</li>
 			</ul>
 		</section>
 		<div class="horizontal-rule"></div>
-		<section id="about-us-section" class="about-us-section container">
+		<section id="about-us-section" class="about-us-section ">
 			<h2 class="visually-hidden">О нас</h2>
 			<div class="first-studio">
 				<p class="text-big">
-					Мы - маленькая, но гордая<br>
+					Мы — маленькая, но гордая<br>
 					дизайн-студия из Краснодара.
 				</p>
-				<p>
+				<p class="first-studio-paragraph">
 					Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>
 					превыше креатива. Работаем не покладая рук, как роботы.
 				</p>
@@ -121,15 +122,15 @@
 				<div class="second-studio-wrapper">
 					<p class="text-bold">с 2004 года Любим точность во всем:</p>
 					<ul class="about-us-list about-us-list-wrapper">
-						<li class="about-us-list-item"><span class="big-numbers">146%</span><br> Уровень самоотдачи</li>
-						<li class="about-us-list-item"><span class="big-numbers">100%</span><br> Соблюдение  сроков</li>
-						<li class="about-us-list-item"><span class="big-numbers">50%</span><br> Минимальная предоплата</li>
+						<li class="about-us-list-item"><span class="big-numbers">146%</span><br><p>Уровень самоотдачи</p></li>
+						<li class="about-us-list-item"><span class="big-numbers">100%</span><br><p>Соблюдение  сроков</p></li>
+						<li class="about-us-list-item"><span class="big-numbers">50%</span><br><p>Минимальная предоплата</p></li>
 					</ul>
 				</div>
 			</div>
 		</section>
 		<div class="horizontal-rule"></div>
-		<section id="clients-section" class="clients-section container">
+		<section id="clients-section" class="clients-section ">
 			<h2 class="visually-hidden">Клиенты</h2>
 			<ul class="clients-list">
 				<li class="clients-item"><a href="https://htmlacademy.ru/intensive/htmlcss" class="clients-logo"><img src="img/html-academy-logo.png" alt="HTML Academy"></a></li>
@@ -143,17 +144,17 @@
 			<h2 class="visually-hidden">Контакты</h2>
 			<div class="contacts-container">
 				<p class="company-name">Nёrds design studio</p>
-				<p>
+				<p class="address">
 					191186, Санкт-Петербург,<br>
-					ул. Б. Конюшенная, д. 19/8<br>
+					ул. Б. Конюшенная, д. 19/8<br><br>
 					тел. +7 (812) 275-75-75
 				</p>
-				<button type="button" class="button">Напишите нам</button>
+				<button type="button" class="button write-us-btn">Напишите нам</button>
 			</div>
 		</section>
 	</main>
-	<footer>
-		<section class="socials container">
+	<footer class="main-footer">
+		<section class="socials ">
 			<h2 class="visually-hidden">Социальные сети</h2>
 			<div class="socials-block">
 				<ul class="socials-list">
