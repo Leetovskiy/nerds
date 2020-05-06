@@ -234,7 +234,6 @@ a.disabled-link {
 	border-radius: 3px;
 }
 
-/* TODO: Стилизовать кнопки слайдеров по styleguide */
 .slider-switch-btn {
   width: 18px;
   height: 18px;
@@ -406,6 +405,11 @@ a.disabled-link {
 
 .clients-section {
 	margin-bottom: 35px;
+
+	/* Вертикальные разделители между логотипами */
+	background-image: url("../img/vert-div.png"), url("../img/vert-div.png"), url("../img/vert-div.png");
+	background-position: left 493px top 12px, left 813px top 12px, left 1113px top 12px;
+	background-repeat: no-repeat,no-repeat,no-repeat;
 }
 
 .clients-section li {
@@ -424,17 +428,6 @@ a.disabled-link {
 .clients-logo:active {
   opacity: 0.1;
 }
-
-/* FIXME: Решить проблему с позиционирвоанием разделителей */
-/* .clients-item + .clients-item::before {
-	content: "";
-	float: left;
-	margin-right: 10px;
-	width: 2px;
-	height: 52px;
-	background-color: #eee;
-}*/
-
 
 /* Контакты */
 
