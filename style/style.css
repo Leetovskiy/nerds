@@ -805,6 +805,15 @@ a.disabled-link {
 	margin-top: 43px;
 }
 
+.filter-grid ul {
+	padding: 0;
+	margin-top: 11px;
+}
+
+.filter-grid li + li {
+	margin-top: 20px;
+}
+
 .input-price {
 	height: 38px;
 	width: 80px;
@@ -842,6 +851,22 @@ input[type=number] {
 
 	color: #283136;
 	text-transform: uppercase;
+}
+
+.features {
+  margin-top: 22px;
+}
+
+.features ul {
+  padding: 0;
+}
+
+.features li + li {
+  margin-top: 21px;
+}
+
+.features ul {
+  margin-top: 10px;
 }
 
 
