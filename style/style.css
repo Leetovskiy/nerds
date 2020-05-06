@@ -635,10 +635,16 @@ a.disabled-link {
 
 
 /* Фильтры */
- /* TODO: Выровнять элементы по pixel perfect */
 
 .filters fieldset {
 	border: none;
+}
+
+.filters-btn {
+  padding: 18px 90px;
+  margin-top: 23px;
+  margin-left: 14px;
+  border-radius: 2px;
 }
 
 .price-fieldset legend {
@@ -983,6 +989,20 @@ input[type=number] {
 	height: 40px;
 }
 
+.buy-button {
+  padding: 18px 60px;
+  border-radius: 2px;
+}
+
+.catalog-btn {
+  border-radius: 2px;
+  width: 50px;
+  height: 50px;
+}
+
+.catalog-next-btn {
+  width: 260px;
+}
 
 /* Сетка */
 /* Шапка */
