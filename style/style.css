@@ -388,6 +388,10 @@ a.disabled-link {
 	margin-bottom: 50px;
 }
 
+.percent {
+	vertical-align: super;
+}
+
 .second-studio {
   background-image: url(../img/nerds-illustration.png);
 	background-position: right 0 top 7px;
