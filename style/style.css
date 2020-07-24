@@ -575,49 +575,111 @@ a.disabled-link {
 }
 
 
-/* Обратная связь */
+/* Модальное окно */
 
-.section-write-us {
+.modal-feedback {
 	width: 960px;
-	height: 590px;
-	box-shadow: 0px 20px 40px 0px;
-	border: 1px solid transparent;
+	padding: 85px 100px;
+	box-sizing: border-box;
+
+	position: fixed;
+	top: 120px;
+	left: 50%;
+	margin-left: -480px;
+
+	background-color: #fff;
+	box-shadow: 0px 20px 40px 0px rgba(0,0,0,0.75);
 }
 
-.section-write-us fieldset {
+.modal-close {
+	width: 21px;
+	height: 21px;
+	cursor: pointer;
+	content: "";
+	border: 0;
+	background-color: transparent;
+
+	opacity: 0.3;
+}
+
+.modal-feedback-fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
   border: none;
 }
 
-.section-write-us h2 {
-  font-family: inherit;
+
+.modal-feedback-fieldset {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	width: 760px;
+}
+
+.modal-feedback-fieldset input {
+	width: 360px;
+	height: 50px;
+	background-color: #ffffff;
+	border: 2px solid #d7dcde;
+	border-radius: 4px;
+	margin-top: 12px;
+}
+
+.modal-feedback-wrapper {
+	width: 100%;
+	margin-top: 35px;
+}
+
+.modal-feedback-wrapper textarea {
+	width: 100%;
+	min-height: 120px;
+	background-color: #ffffff;
+	border: 2px solid #d7dcde;
+	border-radius: 4px;
+	margin-top: 12px;
+}
+
+.modal-feedback-wrapper .button {
+	margin-top: 46px;
+	width: 260px;
+	height: 50px;
+	background-color: #fb565a;
+	border-radius: 2px;
+}
+
+.modal-heading {
+	width: 100%;
+}
+
+.modal-heading h2 {
   font-size: 45px;
+  line-height: 45px;
   font-weight: 500;
 }
 
-.section-write-us label {
-  font-family: inherit;
-  font-weight: 700;
+/* CSS графика кнопки закрытия */
+.modal-close::before,
+.modal-close::after {
+	content: "";
+	position: absolute;
+
+	width: 21px;
+	height: 4px;
+	right: 115px;
+	background-color: #fb565a;
 }
 
-.input {
-  width: 360px;
-  height: 50px;
-
-  font-family: inherit;
-  font-weight: 400;
-
-  border: 2px solid #d7dcde;
+.modal-close::before {
+	transform: rotate(45deg);
 }
 
-.letter-input {
-  width: 760px;
-  height: 118px;
+.modal-close::after {
+	transform: rotate(-45deg);
 }
 
-.close-button {
-  background: transparent;
-  border: none;
-}
+
 
 
 /* Каталог */

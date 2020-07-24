@@ -182,14 +182,13 @@
 		</section>
 	</footer>
 
-	<section class="section-write-us">
-		<form class="write-us-form">
-      <fieldset class="write-us-fieldset">
+	<section class="modal-feedback visually-hidden">
+		<form class="modal-feedback-form">
+      <fieldset class="modal-feedback-fieldset">
 				<div class="modal-heading">
 					<legend><h2>Напишите нам</h2></legend>
-					<button type="button" aria-label="Закрыть модальное окно" class="close-button"><img src="img/svg/close-cross.svg" alt="" aria-hidden="true"></button>
+					<button type="button" aria-label="Закрыть модальное окно" class="modal-close"></button>
 				</div>
-				<div class="modal-inputs">
 					<label>
 						Ваше имя:<br>
 						<input type="text" placeholder="Имя Фамилия" class="input">
@@ -199,15 +198,12 @@
 						<input type="email" placeholder="email@example.com" class="input">
 					</label>
 				</div>
-				<div>
+				<div class="modal-feedback-wrapper">
 					<label>
 						Текст письма:<br>
 						<textarea placeholder="В свободной форме" class="input letter-input"></textarea>
 					</label>
-				</div>
-				<div>
 					<button type="submit" class="button">Отправить</button>
-				</div>
       </fieldset>
     </form>
 	</section>
