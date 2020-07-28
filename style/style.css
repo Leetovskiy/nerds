@@ -311,7 +311,6 @@ a.disabled-link {
 }
 
 .advantages-list li:last-child {
-  margin-left: ;
   margin-right: 40px;
 }
 
@@ -523,7 +522,6 @@ a.disabled-link {
   background-color: #e1e1e1;
 	display: flex;
 	justify-content: center;
-	align-content: ;
 	align-items: center;
 }
 
