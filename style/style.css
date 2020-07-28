@@ -583,7 +583,7 @@ a.disabled-link {
 	box-sizing: border-box;
 
 	position: fixed;
-	top: 120px;
+	top: 60px;
 	left: 50%;
 	margin-left: -480px;
 
@@ -1294,4 +1294,8 @@ input[type=number] {
 	display: flex;
 	justify-content: space-between;
 	width: 445px;
+}
+
+.modal-show {
+	display: block;
 }
