@@ -25,6 +25,30 @@ a.disabled-link {
 }
 
 
+/* Анимация потряхивания */
+
+@keyframes shake {
+	0%, 100% { transform: translateX(0px);}
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
+	20%, 40%, 60%, 80% { transform: translateX(10px);}
+}
+
+/* Анимация появления */
+
+@keyframes appearance {
+	0% { transform: translateY(-100%);}
+	100% { transform: translateY(0px);}
+}
+
+/* Анимация исчезновения */
+/* 
+@keyframes disappearance {
+	0% { transform: translateY(0px);}
+	50% { transform: translateY(-50px);}
+	100% { transform: translateY(200%);}
+} */
+
+
 /* Кнопки */
 
 .button {
@@ -1298,4 +1322,13 @@ input[type=number] {
 
 .modal-show {
 	display: block;
+
+	animation-name: appearance;
+	animation-duration: 0.6s;
+
+}
+
+.modal-shake {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
