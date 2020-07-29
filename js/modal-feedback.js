@@ -8,6 +8,14 @@ let requiredItems = Array.prototype.slice.call(modalFeedback.querySelectorAll('*
 /* Появление и закрытие окна по кнопкам */
 openButton.addEventListener('click', function() {
   modalFeedback.classList.add('modal-show')
+
+  // Фокус в поле формы
+  for (let i=0, len=requiredItems.length; i<len; i++) {
+    if (!requiredItems[i].value) {
+      requiredItems[i].focus()
+      break
+    }
+}
 })
 
 closeButton.addEventListener('click', function() {
@@ -25,9 +33,11 @@ window.addEventListener('keydown', function( evt ) {
   }
 })
 
-submitButton.addEventListener('click', function( evt) {
+
+submitButton.addEventListener('click', function( evt ) {
+  /* Потряхивание окна, если требуемые поля не заполнены */
   requiredItems.forEach(function(entry) {
-    if (!entry.value){
+    if (!entry.value) {
       modalFeedback.classList.remove('modal-shake')
       modalFeedback.offsetWidth = modalFeedback.offsetWidth
       modalFeedback.classList.add('modal-shake')
