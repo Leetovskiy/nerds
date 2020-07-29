@@ -20,9 +20,9 @@ a.disabled-link {
 	cursor: default;
 }
 
-:focus {
+/* :focus {
 	outline: 2px dashed #fb565a;
-}
+} */
 
 
 /* Анимация потряхивания */
@@ -478,6 +478,10 @@ a.disabled-link {
   background-color: #fff;
   width: 320px;
 	min-height: 310px;
+
+	position: absolute;
+
+	box-shadow: 0px 0px 9px 3px rgba(34, 60, 80, 0.2);
 
 	display: flex;
 	flex-direction: column;
